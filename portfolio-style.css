@@ -1,0 +1,126 @@
+*{
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+html{
+    background-color: #d1d0d0;
+    font-family: "Bricolage Grotesque", sans-serif;
+}
+nav{
+    position: sticky;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav-container{
+    width: 85%;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5%;
+    background-color: #fff;
+    box-shadow: 5px 5px 20px #646363;
+    border-radius: 0 0 20px 20px;
+}
+.link-list{
+    display: flex;
+    gap: 30px;
+    list-style: none;
+}
+.nav-container a{
+    text-decoration: none;
+    color: #484646;
+}
+.brand-logo{
+    font-weight: 900;
+    font-size: 30px;
+    font-family: "Bauhaus 93";
+    background-image: -webkit-linear-gradient(0deg,#bc59ea,#ff6de7);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: 0.4s ease;
+}
+.link-list li a{
+    font-weight: 700;
+    font-size: 12px;
+    transition: 0.3s ease;
+}
+.link-list li a::after{
+    content: "";
+    display: block;
+    width: 0;
+    height: 2px;
+    background-color: #bc59ea;
+    margin-right: auto;
+    transition: 0.4s;
+} 
+.link-list li a:hover::after{
+    width: 100%;
+}  
+.link-list li a:hover{
+    color: #bc59ea;
+}
+.home-container{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.banner-container{
+    width: 85%;
+    height: calc(100vh - 75px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 5%;
+    border-radius: 20px;
+}
+.banner-container .img-banner{
+    width: 50%;
+}
+.banner-container .img-banner img{
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 5px 5px 20px #646363;
+}
+.banner-text{
+    width: 50%;
+}
+.banner-text h1{
+    font-size: 50px;
+    font-family: "Bauhaus 93";
+    background-image: -webkit-linear-gradient(0deg,#bc59ea,#ff6de7);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: 0.4s ease;
+}
+.banner-text p{
+    color: #292828;
+    font-size: 13px;
+    padding-block: 30px;
+    transition: 0.4s ease;
+}
+.banner-text .btn{
+    text-decoration: none;
+    background: linear-gradient(90deg, #bc59ea,#ff6de7);
+    padding: 12px 30px;
+    color: white;
+    font-weight: 600;
+    font-size: 18px;
+    display: inline-block;
+    transition: 0.4s ease;
+}
+.banner-text .btn:hover{
+    transform: scale(1.03);
+}
+
