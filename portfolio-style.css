@@ -1,0 +1,241 @@
+*{
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+html{
+    background-color: #d1d0d0;
+    font-family: "Bricolage Grotesque", sans-serif;
+}
+.side-bar{
+    display: none;
+    list-style: none;
+    gap: 40px;
+}
+.side-bar li{
+    display: block;
+}
+.side-bar li a{
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 900;
+    transition: all 0.3s ease;
+}
+.close-bar{
+    margin-right: auto;
+    padding: 20px;
+    font-size: 25px;
+    color: #bc59ea;
+}
+nav{
+    position: sticky;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav-container{
+    width: 85%;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5%;
+    background-color: #fff;
+    box-shadow: 5px 5px 20px #646363;
+    border-radius: 0 0 20px 20px;
+}
+.link-list{
+    display: flex;
+    gap: 30px;
+    list-style: none;
+}
+.nav-container a{
+    text-decoration: none;
+    color: #484646;
+}
+.brand-logo{
+    font-weight: 900;
+    font-size: 30px;
+    font-family: "Bauhaus 93";
+    background-image: -webkit-linear-gradient(0deg,#bc59ea,#ff6de7);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: 0.4s ease;
+}
+.link-list li a{
+    font-weight: 700;
+    font-size: 12px;
+    transition: 0.3s ease;
+}
+.link-list li a::after{
+    content: "";
+    display: block;
+    width: 0;
+    height: 2px;
+    background-color: #bc59ea;
+    margin-right: auto;
+    transition: 0.4s;
+} 
+.link-list li a:hover::after{
+    width: 100%;
+}  
+.link-list li a:hover{
+    color: #bc59ea;
+}
+.bar-icon{
+    font-size: 30px;
+    color: #bc59ea;
+    transition: 0.4s ease;
+}
+.bar-icon:hover{
+    transform: scale(1.1);
+}
+.bar-icon{
+    display: none;
+}
+.home-container{
+    height: calc(100vh - 70px);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.banner-container{
+    width: 85%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 5%;
+    border-radius: 20px;
+}
+.banner-container .img-banner{
+    width: 50%;
+}
+.banner-container .img-banner img{
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 5px 5px 20px #646363;
+}
+.banner-text{
+    width: 50%;
+}
+.banner-text h1{
+    font-size: 50px;
+    font-family: "Bauhaus 93";
+    background-image: -webkit-linear-gradient(0deg,#bc59ea,#ff6de7);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: 0.4s ease;
+}
+.banner-text p{
+    color: #292828;
+    font-size: 13px;
+    padding-block: 30px;
+    transition: 0.4s ease;
+}
+.banner-text .btn{
+    text-decoration: none;
+    background: linear-gradient(90deg, #bc59ea,#ff6de7);
+    padding: 12px 30px;
+    color: white;
+    font-weight: 600;
+    font-size: 18px;
+    display: inline-block;
+    transition: 0.4s ease;
+}
+.banner-text .btn:hover{
+    transform: scale(1.03);
+}
+
+@media(max-width:1099px){
+    .banner-container .img-banner img{
+        width: 350px;
+        height: 350px;
+    }
+    .home-container{
+        height: auto;
+        margin-top: 100px;
+    }
+    .banner-text h1{
+        font-size: 40px;
+    }
+}
+@media(max-width:979px){
+    .banner-container .img-banner img{
+        width: 300px;
+        height: 300px;
+    }
+    .banner-text h1{
+        font-size: 30px;
+    }
+}
+@media(max-width:840px){
+    .banner-container .img-banner img{
+        width: 290px;
+        height: 290px;
+    }
+    .banner-text h1{
+        font-size: 25px;
+    }
+    .banner-text .btn{
+        color: white;
+        font-weight: 500;
+        font-size: 15px;
+    }
+}
+@media(max-width:790px){
+    .home-container{
+        height: auto;
+        margin-top: 20px;
+
+    }
+    .banner-container{
+        flex-direction: column;
+        padding: 30px 0;
+    }
+    .banner-text{
+        width: 100%;
+    }
+}
+
+
+@media(max-width:570px){
+    .side-bar{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: fixed;
+        top: 0;
+        right: -100%;
+        background-color: #ffffffd9;
+        backdrop-filter: blur(5px);
+        height: 100vh;
+        width: 95%;
+        z-index: 999;
+        border-radius: 10px 0 0 10px;
+        box-shadow: 5px 5px 20px #000000;
+        transition: 0.8s ease-in-out;
+    }
+    .link-list{
+        display: none;
+    }
+    .bar-icon{
+        display: block;
+    }
+    .img-banner{
+        display: flex;
+        justify-content: center;
+    }
+    .banner-text h1{
+        font-size: 30px;
+        padding-top: 30px;
+    }
+}
