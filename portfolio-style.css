@@ -86,6 +86,9 @@ nav{
 .link-list li a:hover{
     color: #bc59ea;
 }
+.link-list li a.active{
+    color: #bc59ea;
+}
 .bar-icon{
     font-size: 30px;
     color: #bc59ea;
@@ -238,4 +241,5 @@ nav{
         font-size: 30px;
         padding-top: 30px;
     }
+
 }
