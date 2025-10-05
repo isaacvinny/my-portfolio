@@ -169,7 +169,7 @@ nav{
 .section-container{
     width: 85%;
     padding: 20px 5%;
-    background-color: #d1d0d0;
+    background-color: #ffffffd7;
     box-shadow: inset 0 0 10px #646363;
     border-radius: 50px;
 }
@@ -305,3 +305,4 @@ td .resume-text{
         padding-top: 30px;
     }
 }
+
