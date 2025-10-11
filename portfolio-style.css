@@ -287,12 +287,18 @@ td .resume-text{
         border-radius: 10px 0 0 10px;
         box-shadow: 5px 5px 20px #000000;
         transition: 0.8s ease-in-out;
+    }.banner-container .img-banner{
+        width: 100%;
+    }
+    .banner-container .img-banner img{
+        width: 300px;
+        height: 300px;
     }
     .nav-container{
-    width: 95%;
+        width: 95%;
     }
     .section-container{
-    width: 95%;
+        width: 95%;
     }
     .link-list{
         display: none;
@@ -309,3 +315,4 @@ td .resume-text{
         padding-top: 30px;
     }
 }
+
