@@ -180,8 +180,8 @@ nav{
     color: #222020;
 }
 .section-container .about-text{
-    padding-block: 20px;
-    font-size: 15px;
+    padding-block: 10px;
+    font-size: 13px;
     font-weight: 600;
 }
 .page-name::after{
@@ -215,8 +215,48 @@ th{
     width: 7%;
 }
 td .resume-text{
-    font-size: 15px;
+    font-size: 13px;
     font-weight: 600;
+}
+
+/*  styling for project page  */
+
+.project-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-top: 20px;
+    gap: 30px;
+}
+.project-inner-container{
+    width: 400px;
+}
+.project-inner-container p{
+    font-size: 12px;
+    font-weight: 600;
+}
+.project-frame{
+    padding: 8px;
+    background-color: #d1d0d0;
+    width: 400px;
+    height: 250px;
+    border-radius: 20px;
+    overflow: hidden;
+}
+.project-frame img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+    transition: 0.5s;
+}
+.project-frame img:hover{
+    transform: scale(1.07);
+}
+.project-title{
+    padding-top: 10px;
 }
 
 @media(max-width:1099px){
@@ -287,7 +327,8 @@ td .resume-text{
         border-radius: 10px 0 0 10px;
         box-shadow: 5px 5px 20px #000000;
         transition: 0.8s ease-in-out;
-    }.banner-container .img-banner{
+    }
+    .banner-container .img-banner{
         width: 100%;
     }
     .banner-container .img-banner img{
@@ -314,5 +355,11 @@ td .resume-text{
         font-size: 30px;
         padding-top: 30px;
     }
-}
 
+    /*  styling for project page  */
+
+    .project-frame{
+        width: 100%;
+        height: 250px;
+    }
+}
