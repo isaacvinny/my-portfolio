@@ -367,6 +367,7 @@ textarea{
     padding: 10px 15px;
     border-radius: 10px;
     cursor: pointer;
+    transition: all 0.5s;
 }
 .form-btn:hover{
     background-color: #bc59ea;
@@ -516,4 +517,5 @@ textarea{
         width: 90%;
     }
 }
+
 
