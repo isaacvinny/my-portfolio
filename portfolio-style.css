@@ -473,6 +473,9 @@ textarea{
         box-shadow: 5px 5px 20px #000000;
         transition: 0.8s ease-in-out;
     }
+    .section-containerII{
+    width: 90%;
+    }
     .banner-container .img-banner{
         width: 100%;
     }
@@ -517,5 +520,6 @@ textarea{
         width: 90%;
     }
 }
+
 
 
