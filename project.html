@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="vinny.png">
+    <link rel="stylesheet" href="portfolio-style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&display=swap" rel="stylesheet">
+    <title>vinny portfolio</title>
+</head>
+<body>
+    <nav>
+        <ul class="side-bar">
+            <div class="close-bar" onclick="closSibeBar()"><i class="fa-solid fa-xmark"></i></div>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="resume.html">Resume</a></li>
+            <li><a href="project.html">Projects</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+
+        <div class="nav-container">
+            <h1 class="brand-logo"><a href="index.html">Vinny</a></h1>
+            <ul class="link-list">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="resume.html">Resume</a></li>
+                <li><a class="active" href="project.html">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="bar-icon" onclick="openSideBar()">
+                <i class="fa-solid fa-bars-staggered"></i>
+            </div>
+        </div>
+    </nav>
+
+    <section class="main-container">
+        <div class="section-container">
+            <h2 class="page-name">PROJECT</h2>
+                <div class="project-container">
+
+                    <div class="project-inner-container">
+                        <div class="project-frame">
+                            <a href="https://isaacvinny.github.io/Simple-To-Do-Page/" target="_blank"><img src="ToDo App.png" alt=""></a>
+                        </div>
+                        <h4 class="project-title">A To-Do Application</h4>
+                        <p>A productivity app built with JavaScript, CSS and HTML that helps users manage daily tasks efficiently with local storage integration</p>
+                    </div>
+
+                    <div class="project-inner-container">
+                        <div class="project-frame">
+                            <a href="https://isaacvinny.github.io/weather-app/" target="_blank"><img src="weather-app.jpg" alt=""></a>
+                        </div>
+                        <h4 class="project-title">Weather App</h4>
+                        <p>This Weather Application allows users to search for cities and view current weather conditions in real time.The project demonstrates core front-end development skills, API integration, and responsive web design.</p>
+                    </div>
+
+                    <div class="project-inner-container">
+                        <div class="project-frame">
+                            <a href="https://isaacvinny.github.io/Modern-Responsive-Webpage/" target="_blank"><img src="LandingPage.png" alt=""></a>
+                        </div>
+                        <h4 class="project-title">A Responsive Landing Page</h4>
+                        <p>A responsive webpage. It adapts seamlessly across desktop, tablet, and mobile devices, ensuring a smooth user experience everywhere.</p>
+                    </div>
+
+                    <div class="project-inner-container">
+                        <div class="project-frame">
+                            <a href="https://isaacvinny.github.io/Quiz-website/" target="_blank"><img src="quiz.jpg" alt=""></a>
+                        </div>
+                        <h4 class="project-title">A Quiz app</h4>
+                        <p>A responsive and interactive quiz application built with HTML, CSS, and JavaScript.</p>
+                    </div>
+
+                    <div class="project-inner-container">
+                        <div class="project-frame">
+                            <a href="https://isaacvinny.github.io/simple-calculator-page/" target="_blank"><img src="SimpleCalculator.png" alt=""></a>
+                        </div>
+                        <h4 class="project-title">A Simple and Basic Calculator</h4>
+                        <p>A simple calculator page, designed to receive input from the user and perform basic arithmetic calculations.</p>
+                    </div>
+                </div>
+        </div>
+    </section>
+
+<script src="sidebar.js"></script>
+</body>
+</html>
