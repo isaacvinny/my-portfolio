@@ -237,6 +237,18 @@ td .resume-text{
 .project-inner-container p{
     font-size: 12px;
     font-weight: 600;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    line-clamp: 2;
+    overflow: hidden;
+}
+.project-inner-container p:hover {
+  white-space: normal;
+  overflow: visible;
+  background: white;
+  position: relative;
+  z-index: 10;
 }
 .project-frame{
     padding: 8px;
@@ -520,7 +532,3 @@ textarea{
         width: 90%;
     }
 }
-
-
-
-
